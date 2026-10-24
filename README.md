@@ -159,7 +159,7 @@ bash fan-test.sh              # read
 bash fan-test.sh 120          # set all fans to 120/183, then read
 ```
 
-> Note: on some units the EC RPM registers read back as zero even though writes work. Verify by listening/feeling airflow, and by temperatures.
+> RPM reads work on the D6 Ultra (e.g. `1901 1879 2933`). A reading of `0` means that fan is stopped — for example the CPU fan left on EC auto (PWM 0).
 
 ## 7. Verification checklist
 

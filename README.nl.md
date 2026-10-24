@@ -74,7 +74,7 @@ Afstellen: pas de variabelen bovenin aan (`D_MIN=70 D_MAX=183 T_LO=35 T_HI=48 T_
 pkill -f zettlab-fans.sh
 nohup bash /boot/config/zettlab-fans.sh >/dev/null 2>&1 &
 ```
-Bij stoppen zet het script alle fans op vol. Testen: `bash fan-test.sh` (uitlezen) of `bash fan-test.sh 120` (vaste PWM; stop eerst het script).
+Bij stoppen zet het script alle fans op vol. Testen: `bash fan-test.sh` (uitlezen) of `bash fan-test.sh 120` (vaste PWM; stop eerst het script). RPM uitlezen werkt (bijv. `1901 1879 2933`); `0` betekent dat de fan stilstaat, bijv. de CPU-fan op EC-auto.
 
 ## 7. Controlelijst
 

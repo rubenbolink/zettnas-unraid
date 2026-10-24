@@ -1,6 +1,7 @@
 #!/bin/bash
 # Zettlab EC fan test. Usage: fan-test.sh            -> read RPMs
 #                              fan-test.sh <0-183>    -> set all fans to fixed PWM, then read
+# RPM reads work on the D6 Ultra; 0 RPM means the fan is stopped (e.g. CPU fan on EC auto).
 # Stop zettlab-fans.sh first (pkill -f zettlab-fans.sh) or it overrides you within 10 s.
 BASE=$((0xFE0B0456))
 rd() { dd if=/dev/mem bs=1 skip="$1" count=1 status=none | od -An -tu1 | tr -d ' '; }
