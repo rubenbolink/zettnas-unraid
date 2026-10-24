@@ -3,8 +3,6 @@
 **Run Unraid on a Zettlab NAS — from a USB stick prepared on Windows to a stable system that never shuts down, with both the CPU and HDD fans controlled.**
 
 > Tested on a **Zettlab D6 Ultra** (Intel Core Ultra 5 125H) with **Unraid 7.3.4**. Other Zettlab models (D4 / D6 / D8) are probably similar but are **untested**.
->
-> 🇳🇱 Nederlandse versie: [README.nl.md](README.nl.md)
 
 > ⚠️ **Disclaimer:** use at your own risk. The fan script writes directly to physical memory (`/dev/mem`) to talk to the embedded controller. Wrong values or addresses on a different board could cause hangs or overheating. No warranty — see [LICENSE](LICENSE).
 
